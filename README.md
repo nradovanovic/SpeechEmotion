@@ -41,4 +41,8 @@ Data is divided in 85-15-5 ratio for training test and validation set. Training 
 
 Model achieves 84% accuracy on validation set and 8 and 82% accuracy on the test set.
 
+![Confusion matrix](plots/confusion_matrix.png)
+
 ## Testing for the new input
+
+Model architecture and coefficents are saved after traning and can be loaded after and tested on different recorded audios. Script for recorded audios `record_wav.py` recordes an mono audio in wave audio format sampled in 24kHz. In script `test_for_audio.py` a newly recorded wav file can be specified and tested. Model and coefficients are intially loaded from specified paths and model needs to be compiled in the same way like in training. Output of the model is the emotion prediction and plot of model confidence for every emotion.
